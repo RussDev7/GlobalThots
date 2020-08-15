@@ -26,9 +26,12 @@ if (password==pass1)
   document.getElementById("overlay1").style.display = "none";
 else
 {
-  window.location.href = 'http://globalthots.dynu.net/wrongpassword.html';
-  alert('Password incorrect!');
+  document.body.style.backgroundColor = "black";
+  document.title = "Wrong Password!"
   document.getElementById("overlay2").style.display = "block";
+  for (;;) {
+    alert('Password incorrect!');
+  }
 }
 //-->
 </script>
