@@ -26,10 +26,10 @@ if (password==pass1)
   document.getElementById("overlay1").style.display = "none";
 else
 {
-  alert('Password incorrect2!');
+  window.location.href = 'http://globalthots.dynu.net/wrongpassword.html';
   document.getElementById("overlay2").style.display = "block";
   for (;;) {
-    window.location.href = 'http://globalthots.dynu.net/wrongpassword.html';
+    alert('Password incorrect!');
   }
 }
 //-->
